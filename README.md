@@ -42,11 +42,11 @@ Protótipo de baixa fidelidade:
 
 Protótipo de alta fidelidade:
 
-![Wireframe final](img/wireframe-final.png)
+![Wireframe final](img/wireframe-final-figma.png)
 
 Versão final
 
-![Versão final](img/wireframe.png)
+![Versão final](img/wireframe-final.png)
 
 ## Histórias de usuário
 

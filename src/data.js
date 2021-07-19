@@ -1,7 +1,7 @@
 export const filterData = (data, statusParameter, genderParameter) => {
   const bothFiltersAreChosen = statusParameter !== "" && genderParameter !== "";
   const genderParameterIsNotEmpty = genderParameter !== "";
-  const statusParameterIsNotEmpty = statusParameter !== "" ;
+  const statusParameterIsNotEmpty = statusParameter !== "";
 
   let filterResults = "";
 
@@ -20,7 +20,7 @@ export const filterData = (data, statusParameter, genderParameter) => {
     return filterResults;
   }
 
-  else{
+  else {
     return false
   }
 };
@@ -33,13 +33,13 @@ export const computeStats = {
 
   gender: (data, genderParameter) => {
 
-    const totalByGender = data.reduce(function(total, personagem){
-      if (personagem.gender === genderParameter){
+    const totalByGender = data.reduce(function (total, character) {
+      if (character.gender === genderParameter) {
         return total + 1;
       }
       return total;
     }, 0)
-    const average = Number(((totalByGender / data.length) * 100).toFixed(2))
+    const average = Number(((totalByGender / data.length) * 100).toFixed(2));
     return average;
   },
 
@@ -48,4 +48,4 @@ export const computeStats = {
 export const searchName = (data, condition) => {
   const searchResults = data.filter(n => n.name.toLowerCase().includes(condition.toLowerCase()));
   return searchResults;
-} 
+}
