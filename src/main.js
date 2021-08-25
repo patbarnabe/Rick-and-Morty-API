@@ -27,16 +27,18 @@ function mainFunction(data) {
       .map(
         ({ name, status, gender, image, episode }) =>
           `<div class="cards_container">
+          <div class="moldura">
+            <img src="https://i.ibb.co/svrkzbn/gosma-big-nova-semfundo-pho.png">
+          </div>
+          <span id="character_name">
+            <h3>${name}</h3>
+          </span>
          <div class="character_img">
            <img src="${image}">
          </div>
           <div class="character_info">
-          <span id="character_name">
-            <h3>${name}</h3>
-           </span>
-           <span id="character_status">${status} - ${gender}</span>
-           <span id="episodes">Episódios</span>
-             <p>${episode.map((i) => i.replaceAll(/[^0-9]/g, " "))}</p>
+            <span class="character_status info"><p>${status}</p></span>
+            <span class="character_gender info"><p>${gender}</p></span>
           </div>
       </div>`
       )

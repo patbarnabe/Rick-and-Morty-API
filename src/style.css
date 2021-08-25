@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 html,
 body {
   margin: 0;
@@ -120,19 +122,39 @@ input,
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-
+/* WEB */
 .cards_container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   margin: 18px;
   position: relative;
   flex: 1;
-  height: 243px;
-  min-width: 400px;
-  max-width: 480px;
+  height: 360px;
+  min-width: 200px;
+  max-width: 240px;
   max-height: 100%;
   border-radius: 10px;
-  background-color: #E3DDE0;
+  box-shadow: 0px 0px 5px 1px #2bf14b7a;
+  background-color: #2bf14b0a;
+}
+.moldura{
+ position: absolute;
+ top: 41px;
+}
+.moldura img {
+  height: 228px;
+}
+
+.info{
+  border-radius: 10px;
+  border: 1px solid #2bf14b73;
+  margin: 5px;
+}
+.info p {
+  color: white;
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: #000;
 }
 
 img,
@@ -140,7 +162,7 @@ img,
   max-height: 100%;
   max-width: 100%;
   border-radius: 10px;
-  height: 245px;
+  height: 177px;
   width: auto;
 }
 
@@ -149,7 +171,7 @@ img {
 }
 
 .character_info {
-  margin-left: 10px;
+  margin-top: 15px;
   width: 200px;
   display: flex;
   flex-direction: column;
@@ -157,7 +179,10 @@ img {
 
 h3 {
   font-size: 20px;
-  font-weight: 600;
+  color: white;
+  text-shadow: 0.1em 0.1em rgb(0, 0, 0);
+  font-weight: bold;
+  font-family: 'Righteous', cursive;
 }
 
 #character_name,
