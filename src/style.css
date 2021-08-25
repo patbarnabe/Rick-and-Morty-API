@@ -203,11 +203,12 @@ span {
   color: #e3dde0;
 }
 
-.portal{
+.btn-portal{
   margin-top: 100px;
-  margin-left: 450px;
+  margin-left: 500px;
   width: 600px;
   height: 600px;
+
 }
 
 @media (max-width: 901px) {
