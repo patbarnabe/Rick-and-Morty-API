@@ -2,10 +2,10 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-image: url(./img/bg01.jpg);
+  background-image: url(./img/background1.jfif);
   box-sizing: border-box;
   height: 100vh;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Righteous', cursive;
 }
 
 main {
@@ -26,6 +26,29 @@ h1 {
 }
 
 .menu-filter {
+  background-color: #38cd4e1e;
+  width: 95%;
+  border-radius: 8px;
+}
+
+.menu-left-side {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  height: 65px;
+  margin-left: 35px;
+}
+
+.menu-right-side {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 35px;
+}
+
+.menu-container {
   display: flex;
   align-content: center;
   align-items: center;
@@ -44,7 +67,9 @@ button {
   outline: none;
   border: none;
   text-align: center;
-  font-size: 16px;
+  font-size: 1.3em;
+  font-family: 'Righteous', cursive;
+  color: white;
 }
 
 select,
@@ -52,7 +77,6 @@ button {
   width: 160px;
   height: 25px;
   background: transparent;
-  color: #e3dde0;
   cursor: pointer;
 }
 
@@ -73,30 +97,27 @@ input,
   border-radius: 20px;
   width: 150px;
   height: 45px;
-  background: #221C20;
-  border: 1px solid #87f583;
+  background: #221c2000;
   color: white;
+}
+
+.search {
+  border: 1px solid #87f583;
+  width: 35%;
 }
 
 #sort-btn {
   position: relative;
   right: 23px;
-  background: #87f583;
-  color: black;
   border: none;
 }
 
 #btn-clearFilters {
   width: 100px;
   border-radius: 20px;
-  color: #221C20;
-  background: #87f583;
-  border: 1px solid #87f583;
 }
 
 #btn-clearFilters:hover, #sort-btn:hover {
-  background: #05f2af;
-  border: 1px solid #05f2af;
   transition-duration: 0.5s;
   cursor: pointer;
 }
@@ -201,6 +222,18 @@ span {
 
 .text {
   color: #e3dde0;
+}
+
+.portal-menu {
+  top: 28%;
+  position: absolute;
+  width: 200px;
+  left: 42%;
+  height: 200px;
+}
+
+.img-title {
+  margin-top: -35px;
 }
 
 

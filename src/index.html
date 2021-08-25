@@ -4,39 +4,45 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RICK E MORTY</title>
+    <title>Rick and Morty</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
-      rel="stylesheet"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     />
   </head>
 
   <body>
     <header>
       <h1>
-        <img src="./img/iconTitle.png" alt="Rick and Morty">
+        <img class="img-title" src="./img/iconTitle.png" alt="Rick and Morty">
       </h1>
-      <form class="menu-filter">
-        <input type="search" placeholder="Pesquisar" id="search" />
-        <button id="sort-btn" class="sort">Personagens Principais</button>
-        <select name="filter" id="status-filter">
-          <option class="status" value="" selected disabled;>STATUS</option>
-          <option value="Alive">VIVO</option>
-          <option value="Dead">MORTO</option>
-          <option value="unknown">DESCONHECIDO</option>
-        </select>
-        <select name="filter" id="gender-filter">
-          <option class="gender" value="" selected disabled;>GÊNERO</option>
-          <option value="Male">MASCULINO</option>
-          <option value="Female">FEMININO</option>
-          <option value="unknown">DESCONHECIDO</option>
-          <option value="Genderless">SEM GÊNERO</option>
-        </select>
-        <button id="btn-clearFilters" type="submit">LIMPAR</button>
-      </form>
+      <div class="menu-container">
+        <form class="menu-filter menu-left-side">
+          <select name="filter" id="status-filter">
+            <option class="status" value="" selected disabled;>status</option>
+            <option value="Alive">vivo</option>
+            <option value="Dead">morto</option>
+            <option value="unknown">desconhecido</option>
+          </select>
+          <select name="filter" id="gender-filter">
+            <option class="gender" value="" selected disabled;>gênero</option>
+            <option value="Male">masculino</option>
+            <option value="Female">feminino</option>
+            <option value="unknown">desconhecido</option>
+            <option value="Genderless">sem gênero</option>
+          </select>
+          <button id="btn-clearFilters" type="submit">limpar</button>
+          
+        </form>
+        <form class="menu-filter menu-right-side">
+          <button id="sort-btn" class="sort">personagens</button>
+          <input class="search" type="search" placeholder="Pesquisar" id="search" />        
+        </form>
+      </div>
+
+      <img class="portal-menu" src="img/portal-menu.png" alt="Portal com Ricky and Morty">
+
     </header>
     <main>
       <div class="container">
