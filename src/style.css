@@ -316,3 +316,13 @@ span {
     flex-direction: column;
   }
 }
+
+.cursor {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transition: 100ml;
+  background: url(../img/arma-cursor.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
