@@ -2,7 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #362c33;
+  background-color: black;
   box-sizing: border-box;
   height: 100vh;
   font-family: "Poppins", sans-serif;
@@ -203,6 +203,12 @@ span {
   color: #e3dde0;
 }
 
+.portal{
+  margin-top: 100px;
+  margin-left: 450px;
+  width: 600px;
+  height: 600px;
+}
 
 @media (max-width: 901px) {
   .cards_container {
