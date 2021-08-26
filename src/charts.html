@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RICK E MORTY</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <h1>
+      <img src="./img/iconTitle.png" alt="Rick and Morty">
+    </h1>
+
+  </header>
+  <main>
+    <div id="chart"></div>
+  </main>
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+  <script>
+    fetch("./data/rickandmorty/rickandmorty.json")
+      .then(response => response.json())
+      .then(data => {
+        google.charts.load('current', { packages: ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+        const dataRM = data.results;
+        const aliveFilter = dataRM.filter(results => results.status === "Alive");
+        const deadFilter = dataRM.filter(results => results.status === "Dead");
+        const unknownStatusFilter = dataRM.filter(results => results.status === "unknown");
+
+        function drawChart() {
+          const container = document.querySelector('#chart')
+
+          const dataChart = new google.visualization.arrayToDataTable([
+            ['Status', 'Status'],
+            ['Vivos', aliveFilter.length],
+            ['Mortos', deadFilter.length],
+            ['Desconhecidos', unknownStatusFilter.length]
+          ])
+          const options = {
+            title: 'Status',
+            height: 400,
+            width: 720,
+            is3D: true,
+            backgroundColor: { fill:'transparent' }
+          }
+
+          // const chart = new google.visualization.ColumnChart(container)
+          // const chart = new google.visualization.BarChart(container)
+          // const chart = new google.visualization.LineChart(container)
+          const chart = new google.visualization.PieChart(container)
+          chart.draw(dataChart, options)
+        }
+      })
+
+  </script>
+  <script src="./charts.js" type="module"></script>
+  <!---inserir outro JS-->
+</body>
+
+</html>
