@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 html,
 body {
   margin: 0;
@@ -219,43 +221,112 @@ input,
   flex-wrap: wrap;
 }
 
-.cards_container {
+/*CARDS*/
+
+.cards_container, .inner-div{
   display: flex;
-  flex-direction: row;
-  margin: 18px;
+  flex-direction: column;
+  align-items: center;
   position: relative;
-  flex: 1;
-  height: 243px;
-  min-width: 400px;
-  max-width: 480px;
-  max-height: 100%;
+  height: 360px;
+  width: 240px;
+  /*min-width: 200px;*/
+  /*max-width: 240px;
+  max-height: 100%;*/
   border-radius: 10px;
-  background-color: #E3DDE0;
+}
+
+.cards_container{
+  margin:18px;
+  flex: 1;
+}
+
+.inner-div{
+  transition: all 0.6s cubic-bezier(0.8, -0.4, 0.2, 1.7);
+  transform-style: preserve-3d;
+}
+ 
+.cards_container:hover .inner-div {
+  transform: rotateY(180deg);
+}
+
+.front-card,
+.back-card {
+  position: relative;
+  backface-visibility: hidden;
+  box-shadow: 1px 1px 8px #2bf14bbf;
+  background-color: #0cf72f08;
+  height: 360px;
+  width: 240px;
+  border-radius:10px;
+  padding: 2%;
+}
+
+.back-card{
+  transform: rotateY(180deg);
+  position: absolute;
+  box-shadow: 1px 1px 8px #2bf14bbf;
+  background: #000 url(https://i.ibb.co/bHrzRqm/background1.jpg);
+}
+
+.back-card span {
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: white;
+  text-shadow: 0.1em 0.1em rgb(0, 0, 0);
+  font-weight: bold;
+  font-family: 'Righteous', cursive;
+}
+
+.moldura{
+  position: absolute;
+  top: 43px;
+  right: 20px;
+  left: -13px;
+}
+
+.moldura img {
+  height: 228px;
 }
 
 img,
 .character_img {
+  display: inline-block;
   max-height: 100%;
   max-width: 100%;
   border-radius: 10px;
-  height: 245px;
+  height: 177px;
   width: auto;
+  margin-left: 19px;
 }
-
+ 
 img {
   border-radius: 10px 0 0 10px;
 }
-
-.character_info {
-  margin-left: 10px;
-  width: 200px;
-  display: flex;
-  flex-direction: column;
+ 
+.info{
+  border-radius: 10px;
+  border: 1px solid #2bf14c49;
+  margin: 5px;
+  margin: 20px;
+}
+.info p {
+  color: white;
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: #000;
 }
 
-h3 {
-  font-size: 20px;
-  font-weight: 600;
+.character_info {
+  margin-top: 22px;
+}
+
+#character_name{
+  width:100%;
+  height: 50px;
 }
 
 #character_name,
@@ -268,15 +339,17 @@ p {
   margin: 0;
   text-align: center;
 }
-
+ 
 p {
   font-size: 16px;
+  color: white;
 }
 
-#episodes {
+
+/*#episodes {
   margin-top: 10px;
   font-weight: 600;
-}
+}*/
 
 .stats {
   margin: 18px;

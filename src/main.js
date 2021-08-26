@@ -25,22 +25,37 @@ function mainFunction(data) {
   function printCardsGeneric(filterChosen) {
     genericCards = filterChosen
       .map(
-        ({ name, status, gender, image, episode }) =>
+        ({ name, status, gender, image, episode, species, location }) =>
           `<div class="cards_container">
-         <div class="character_img">
-           <img src="${image}">
-         </div>
-          <div class="character_info">
-          <span id="character_name">
-            <h3>${name}</h3>
-           </span>
-           <span id="character_status">${status} - ${gender}</span>
-           <span id="episodes">Episódios</span>
-             <p>${episode.map((i) => i.replaceAll(/[^0-9]/g, " "))}</p>
-          </div>
-      </div>`
+            <div class="inner-div">
+              <div class="front-card">
+                <div class="moldura">
+                  <img src="https://i.ibb.co/svrkzbn/gosma-big-nova-semfundo-pho.png">
+                </div>  
+                <span id="character_name">
+                  <h3>${name}</h3>
+                </span>
+               
+                <div class="character_img">
+                  <img src="${image}">
+                </div>
+                <div class="character_info">
+                  <span class="character_status"><p class="info">${status}</p></span>
+                  <span class="character_gender"><p class="info">${gender}</p></span>
+                </div>
+              </div>
+              <div class="back-card">
+                <span> <h3>Episódios:</h3> </span>
+                  <p class="info">${episode.map((i) => i.replaceAll(/[^0-9]/g, " "))}</p>
+                  <span><h3>Species</h3></span>
+                  <p>${species}</p>
+                  <span><h3>Location</h3></span>
+                  <p>${location.name}</p>
+              </div>
+            </div>
+          </div>`
       )
-      .join("");
+      .join("")
 
     cards.innerHTML = "";
     cards.innerHTML += genericCards;
