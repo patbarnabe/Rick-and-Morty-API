@@ -158,7 +158,8 @@ input,
 .back-card {
   position: relative;
   backface-visibility: hidden;
-  background-color: #528059;
+  /* background-color: #0cf72f0a; */
+  background-color: #0cf72f08;
   height: 360px;
   width: 240px;
   border-radius:10px;
@@ -167,11 +168,17 @@ input,
 
 .back-card{
   transform: rotateY(180deg);
-  position: absolute; 
+  position: absolute;
+  background: #000 url(https://i.ibb.co/bHrzRqm/background1.jpg);
+}
+
+.back-card span {
+  text-align: center;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 18px;
+  letter-spacing: 1px;
   color: white;
   text-shadow: 0.1em 0.1em rgb(0, 0, 0);
   font-weight: bold;
@@ -180,7 +187,9 @@ h3 {
 
 .moldura{
   position: absolute;
-  top: 41px;
+  top: 43px;
+  right: 20px;
+  left: -13px;
 }
 
 .moldura img {
@@ -189,11 +198,13 @@ h3 {
 
 img,
 .character_img {
+  display: inline-block;
   max-height: 100%;
   max-width: 100%;
   border-radius: 10px;
   height: 177px;
   width: auto;
+  margin-left: 19px;
 }
  
 img {
@@ -202,8 +213,9 @@ img {
  
 .info{
   border-radius: 10px;
-  border: 1px solid #2bf14b73;
+  border: 1px solid #2bf14c49;
   margin: 5px;
+  margin: 20px;
 }
 .info p {
   color: white;
@@ -212,10 +224,7 @@ img {
 }
 
 .character_info {
-  margin-top: 15px;
-  width: 200px;
-  display: flex;
-  flex-direction: column;
+  margin-top: 22px;
 }
 
 #character_name{

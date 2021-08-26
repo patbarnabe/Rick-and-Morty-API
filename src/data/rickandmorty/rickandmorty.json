@@ -244,7 +244,7 @@
       },
       {
           "id": 6,
-          "name": "Abadango Cluster Princess",
+          "name": "Abadango Princess",
           "status": "Alive",
           "species": "Alien",
           "type": "",
@@ -1373,7 +1373,7 @@
       },
       {
           "id": 56,
-          "name": "Bootleg Portal Chemist Rick",
+          "name": "Bootleg Chemist Rick",
           "status": "Dead",
           "species": "Human",
           "type": "",
@@ -1485,7 +1485,7 @@
       },
       {
           "id": 61,
-          "name": "Campaign Manager Morty",
+          "name": "Manager Morty",
           "status": "Dead",
           "species": "Human",
           "type": "",
@@ -1595,7 +1595,7 @@
       },
       {
           "id": 66,
-          "name": "Coach Feratu (Balik Alistane)",
+          "name": "Coach Balik Alistane",
           "status": "Dead",
           "species": "Vampire",
           "type": "",
@@ -5237,7 +5237,7 @@
       },
       {
           "id": 229,
-          "name": "Morty Mart Manager Morty",
+          "name": "Morty Mart",
           "status": "Alive",
           "species": "Human",
           "type": "",
