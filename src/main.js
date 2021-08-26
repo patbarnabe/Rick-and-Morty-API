@@ -1,4 +1,4 @@
-import { computeStats, filterData, sortData, searchName } from "./data.js";
+import { filterData, sortData, searchName } from "./data.js";
 
 fetch("./data/rickandmorty/rickandmorty.json")
   .then(response => response.json())
@@ -17,8 +17,8 @@ function mainFunction(data) {
   const statusFilter = document.getElementById("status-filter");
   const genderFilter = document.getElementById("gender-filter");
 
-  const printTotalCharacters = document.getElementById("totalCharacters");
-  const printGenderAverage = document.getElementById("genderAverage");
+  // const printTotalCharacters = document.getElementById("totalCharacters");
+  // const printGenderAverage = document.getElementById("genderAverage");
 
   printCardsGeneric(data.results);
 
@@ -59,29 +59,30 @@ function mainFunction(data) {
 
     cards.innerHTML = "";
     cards.innerHTML += genericCards;
-  };
-  
-  const totalCharacters = computeStats.characters(data.results);
+  }
 
-  printTotalCharacters.innerHTML =
-    `<p class="text">O total de personagens da série é:
-    <span class="numberOfCharacters">${totalCharacters}</span>
-   </p>`;
 
-  const maleAverage = computeStats.gender(data.results, "Male") + "%";
-  const femaleAverage = computeStats.gender(data.results, "Female") + "%";
-  const genderlessAverage = computeStats.gender(data.results, "Genderless") + "%";
-  const unknownAverage = computeStats.gender(data.results, "unknown") + "%";
+  // const totalCharacters = computeStats.characters(data.results);
 
-  printGenderAverage.innerHTML =
-    `
-      <p class="text">&ensp;<span>Médias:</span>&ensp;
-      Masculinos: <span>${maleAverage}</span> &ensp;| &ensp;  
-      Femininos: <span>${femaleAverage}</span> &ensp;| &ensp;
-      Desconhecidos: <span>${unknownAverage}</span>&ensp; | &ensp;
-      Sem gênero: <span>${genderlessAverage}</span> &ensp;
-      </p>
-  `;
+  // printTotalCharacters.innerHTML =
+  //   `<p class="text">O total de personagens da série é:
+  //   <span class="numberOfCharacters">${totalCharacters}</span>
+  //  </p>`;
+
+  // const maleAverage = computeStats.gender(data.results, "Male") + "%";
+  // const femaleAverage = computeStats.gender(data.results, "Female") + "%";
+  // const genderlessAverage = computeStats.gender(data.results, "Genderless") + "%";
+  // const unknownAverage = computeStats.gender(data.results, "unknown") + "%";
+
+  // printGenderAverage.innerHTML =
+  //   `
+  //     <p class="text">&ensp;<span>Médias:</span>&ensp;
+  //     Masculinos: <span>${maleAverage}</span> &ensp;| &ensp;  
+  //     Femininos: <span>${femaleAverage}</span> &ensp;| &ensp;
+  //     Desconhecidos: <span>${unknownAverage}</span>&ensp; | &ensp;
+  //     Sem gênero: <span>${genderlessAverage}</span> &ensp;
+  //     </p>
+  // `;
 
   function filter(e) {
     e.preventDefault();
@@ -114,4 +115,9 @@ function mainFunction(data) {
   }
   searchInput.addEventListener("keyup", searchByName);
 
+  const cursor = document.querySelector('.cursor');
+// cursor
+  document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: "+(e.pageX - 15) + "px;"); 
+  })
 }
