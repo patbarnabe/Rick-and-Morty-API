@@ -2,7 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-image: url(./img/bg01.jpg);
   box-sizing: border-box;
   height: 100vh;
   font-family: "Poppins", sans-serif;
