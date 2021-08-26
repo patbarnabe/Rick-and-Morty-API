@@ -20,7 +20,11 @@
 
   </header>
   <main>
-    <div id="chart"></div>
+    <section class="allCharts">
+    <div id="statusChart" class="statusChart"></div>
+    <div id="genderChart"></div>
+    <div id="speciesChart"></div>
+    </section>
   </main>
   <script src="https://www.gstatic.com/charts/loader.js"></script>
   <script>
@@ -28,14 +32,36 @@
       .then(response => response.json())
       .then(data => {
         google.charts.load('current', { packages: ['corechart'] });
-        google.charts.setOnLoadCallback(drawChart);
+        google.charts.setOnLoadCallback(drawStatusChart);
+        google.charts.setOnLoadCallback(drawGenderChart);
+        google.charts.setOnLoadCallback(drawSpeciesChart);
         const dataRM = data.results;
         const aliveFilter = dataRM.filter(results => results.status === "Alive");
         const deadFilter = dataRM.filter(results => results.status === "Dead");
         const unknownStatusFilter = dataRM.filter(results => results.status === "unknown");
 
-        function drawChart() {
-          const container = document.querySelector('#chart')
+        const maleFilter = dataRM.filter(results => results.gender === "Male");
+        const femaleFilter = dataRM.filter(results => results.gender === "Female");
+        const unknownGenderFilter = dataRM.filter(results => results.gender === "unknown");
+        const genderlessFilter = dataRM.filter(results => results.gender === "Genderless");
+
+        const alienFilter = dataRM.filter(results => results.species === "Alien");
+        const animalFilter = dataRM.filter(results => results.species === "Animal");
+        const cronenbergFilter = dataRM.filter(results => results.species === "Cronenberg");
+        const diseaseFilter = dataRM.filter(results => results.species === "Disease");
+        const humanFilter = dataRM.filter(results => results.species === "Human");
+        const humanoidFilter = dataRM.filter(results => results.species === "Humanoid");
+        const mythologFilter = dataRM.filter(results => results.species === "Mytholog");
+        const parasiteFilter = dataRM.filter(results => results.species === "Parasite");
+        const poopybuttholeFilter = dataRM.filter(results => results.species === "Poopybutthole");
+        const robotFilter = dataRM.filter(results => results.species === "Robot");
+        const vampireFilter = dataRM.filter(results => results.species === "Vampire");
+        const unknownSpeciesFilter = dataRM.filter(results => results.species === "unknown");
+
+
+
+        function drawStatusChart() {
+          const container = document.querySelector('#statusChart')
 
           const dataChart = new google.visualization.arrayToDataTable([
             ['Status', 'Status'],
@@ -45,10 +71,78 @@
           ])
           const options = {
             title: 'Status',
-            height: 400,
-            width: 720,
+            height: 300,
+            width: 520,
             is3D: true,
-            backgroundColor: { fill:'transparent' }
+            backgroundColor: { fill: '#02735E',  fillOpacity: 0.1, strokeWidth: 5, stroke: '#02735E'},
+            chartArea: {width:'90%',height:'75%'},
+            title: { TextStyle: { color: 'blue'} },
+            legend: { textStyle: { color: '#22a2bc', fontSize: 12 } },
+            colors: ['#038C65', '#004411', 'pink'],
+        }
+
+        // const chart = new google.visualization.ColumnChart(container)
+        // const chart = new google.visualization.BarChart(container)
+        // const chart = new google.visualization.LineChart(container)
+        const chart = new google.visualization.PieChart(container)
+        chart.draw(dataChart, options)
+      }
+
+        function drawGenderChart() {
+          const container = document.querySelector('#genderChart')
+
+          const dataChart = new google.visualization.arrayToDataTable([
+            ['Gênero', 'Gênero'],
+            ['Masculinos', maleFilter.length],
+            ['Femininos', femaleFilter.length],
+            ['Desconhecidos', unknownGenderFilter.length],
+            ['Sem gênero', genderlessFilter.length]
+          ])
+          const options = {
+            title: 'Gênero dos personagens',
+            height: 300,
+            width: 520,
+            is3D: true,
+            backgroundColor: { fill: '#02735E',  fillOpacity: 0.1, strokeWidth: 5, stroke: '#02735E'},
+            chartArea: {width:'90%',height:'75%'},
+            title: { TextStyle: { color: 'blue'} },
+            legend: { textStyle: { color: '#22a2bc', fontSize: 12 } },
+          }
+
+          // const chart = new google.visualization.ColumnChart(container)
+          // const chart = new google.visualization.BarChart(container)
+          // const chart = new google.visualization.LineChart(container)
+          const chart = new google.visualization.PieChart(container)
+          chart.draw(dataChart, options)
+        }
+
+        function drawSpeciesChart() {
+          const container = document.querySelector('#speciesChart')
+
+          const dataChart = new google.visualization.arrayToDataTable([
+            ['Espécie', 'Espécie'],
+            ['Alienígena', alienFilter.length],
+            ['Animal', animalFilter.length],
+            ['Cronenberg', cronenbergFilter.length],
+            ['Doença', diseaseFilter.length],
+            ['Humano', humanFilter.length],
+            ['Humanóide', humanoidFilter.length],
+            ['Mytholog', mythologFilter.length],
+            ['Parasita', parasiteFilter.length],
+            ['Poopybutthole', poopybuttholeFilter.length],
+            ['Robô', robotFilter.length],
+            ['Vampiro', vampireFilter.length],
+            ['Indefinido', unknownSpeciesFilter.length],
+          ])
+          const options = {
+            title: 'Espécies',
+            height: 300,
+            width: 520,
+            is3D: true,
+            backgroundColor: { fill: '#02735E',  fillOpacity: 0.1, strokeWidth: 5, stroke: '#02735E'},
+            chartArea: {width:'90%',height:'75%'},
+            title: { TextStyle: { color: 'blue'} },
+            legend: { textStyle: { color: '#22a2bc', fontSize: 12 } },
           }
 
           // const chart = new google.visualization.ColumnChart(container)

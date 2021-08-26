@@ -203,6 +203,13 @@ span {
   color: #e3dde0;
 }
 
+.allCharts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 
 @media (max-width: 901px) {
   .cards_container {
