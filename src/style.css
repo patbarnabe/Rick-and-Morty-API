@@ -29,6 +29,7 @@ h1 {
   background-color: #38cd4e1e;
   width: 95%;
   border-radius: 8px;
+  margin-bottom: 50px;
 }
 
 .menu-left-side {
@@ -36,7 +37,7 @@ h1 {
   align-content: center;
   align-items: center;
   justify-content: flex-start;
-  height: 65px;
+  height: 70px;
   margin-left: 35px;
 }
 
@@ -46,6 +47,7 @@ h1 {
   align-items: center;
   justify-content: flex-end;
   margin-right: 35px;
+  height: 70px;
 }
 
 .menu-container {
@@ -67,59 +69,134 @@ button {
   outline: none;
   border: none;
   text-align: center;
-  font-size: 1.3em;
+  font-size: 16px;
   font-family: 'Righteous', cursive;
-  color: white;
 }
 
 select,
 button {
-  width: 160px;
-  height: 25px;
-  background: transparent;
+  width: 150px;
+  height: 45px;
+  border-radius: 20px;
+  background: #87f583;
+  color: black;
   cursor: pointer;
+  border: 1px solid #87f583;
+  text-align-last: center;
 }
 
 select:hover {
-  border-bottom: 5px double #87f583;
+  background: #05f2af;
+  border: 1px solid #05f2af;
+  transition-duration: 0.5s;
+  cursor: pointer;
   height: 45px;
-  transition: 0.5s;
+  box-shadow: 0px 0px 10px #48ff00, 0px 0px 20px #00ffd5, 0px 0px 30px #2BF14B;
 }
 
 input {
   position: relative;
   right: 20px;
-  font-size: 18px;
+  font-size: 16px;
+  background: transparent;
+  color: white;
+}
+
+input:hover {
+  cursor: pointer;
+  height: 45px;
+  box-shadow: 0px 0px 10px #48ff00, 0px 0px 20px #00ffd5, 0px 0px 30px #2BF14B;
 }
 
 input,
 #sort-btn {
   border-radius: 20px;
-  width: 150px;
-  height: 45px;
-  background: #221c2000;
-  color: white;
+  border: 1px solid #87f583
 }
 
 .search {
   border: 1px solid #87f583;
   width: 35%;
+  display: flex;
+  justify-content: flex-start;
+  height: 40px;
 }
 
 #sort-btn {
   position: relative;
-  right: 23px;
-  border: none;
+  right: 60px;
+  width:100px;
+  height:60px;
 }
 
 #btn-clearFilters {
-  width: 100px;
+  width: 80px;
+  height: 45px;
   border-radius: 20px;
+  color: black;
+  background: #87f583;
+  border: 1px solid #87f583;
+  font-family: 'Righteous', cursive;
 }
 
-#btn-clearFilters:hover, #sort-btn:hover {
+#btn-clearFilters:hover, #sort-btn:hover, #status-filter:hover, #gender-filter:hover {
+  background: #05f2af;
+  border: 1px solid #05f2af;
   transition-duration: 0.5s;
   cursor: pointer;
+  box-shadow: 0px 0px 10px #48ff00, 0px 0px 20px #00ffd5, 0px 0px 30px #2BF14B;
+}
+
+#btn-clearFilters,
+#status-filter,
+#gender-filter,
+#sort-btn,
+.slime {
+  text-decoration:none;
+  color:black;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  background: #2BF14B;
+  border-radius: 40% 60% 50% 40%/40% 40% 60% 60%;
+  animation: anime 7s linear infinite;
+  transition: 1s;
+}
+
+#btn-clearFilters,
+#status-filter,
+#gender-filter,
+.slime {
+  width:80px;
+  height:60px;
+}
+
+#btn-clearFilters,
+#status-filter,
+#gender-filter {
+  margin-left: 80px;
+}
+
+@keyframes anime{
+  0% {border-radius: 40% 60% 50% 40%/40% 40% 60% 60%;}
+  25% {border-radius: 70% 40% 80% 80%/60% 80% 40% 30%;}
+  50% {border-radius: 40% 50% 50% 40%/80% 40% 20% 70%;}
+  75% {border-radius: 80% 50% 70% 90%/40% 60% 70% 40%;}
+  100% {border-radius: 40% 60% 50% 40%/40% 40% 60% 60%;}
+}
+
+.slime{
+  position: absolute;
+  left: 58%;
+  top:38.3%;
+  margin-left: 20px
+}
+
+.slime:hover{
+  background: #05f2af;
+  border: 1px solid #05f2af;
+  box-shadow: 0px 0px 10px #48ff00, 0px 0px 20px #00ffd5, 0px 0px 30px #2BF14B;
+  transition: 1s;
 }
 
 .status,

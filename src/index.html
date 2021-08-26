@@ -21,7 +21,7 @@
       <div class="menu-container">
         <form class="menu-filter menu-left-side">
           <select name="filter" id="status-filter">
-            <option class="status" value="" selected disabled;>status</option>
+            <option class="status" value="" selected disabled; >status</option>
             <option value="Alive">vivo</option>
             <option value="Dead">morto</option>
             <option value="unknown">desconhecido</option>
@@ -36,23 +36,17 @@
           <button id="btn-clearFilters" type="submit">limpar</button>
           
         </form>
+        <a class="slime" href="#"> análises </a>
         <form class="menu-filter menu-right-side">
           <button id="sort-btn" class="sort">personagens</button>
-          <input class="search" type="search" placeholder="Pesquisar" id="search" />        
+          <input class="search" type="search" placeholder="🔎︎                                     " id="search" />        
         </form>
       </div>
 
       <img class="portal-menu" src="img/portal-menu.png" alt="Portal com Ricky and Morty">
 
     </header>
-    <main>
-      <div class="container">
-       <section class="stats">
-        <div id="totalCharacters"></div>
-        <div id="genderAverage"></div>
-       </section>
-      
-
+    <main>     
         <section class="cards"></section>
         <script src="main.js" type="module"></script>
       </div>
