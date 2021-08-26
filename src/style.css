@@ -27,6 +27,11 @@ h1 {
   margin: 0 0 40px 0;
 }
 
+.black-bg {
+  width: max-content;
+  height: max-content;
+}
+
 .menu-filter {
   background-color: #38cd4e1e;
   width: 95%;
@@ -165,6 +170,36 @@ input,
   transition: 1s;
 }
 
+.goback-btn {
+  text-decoration:none;
+  color:black;
+  background: #2BF14B;
+  border-radius: 40% 60% 50% 40%/40% 40% 60% 60%;
+  animation: anime 7s linear infinite;
+  transition: 1s;
+  padding: 22px;
+}
+
+.allCharts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.statusChartContainer, .genderChartContainer, .speciesChartContainer{
+  margin: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.chartsTittle{
+  color:#e3dde0;
+  text-align: start;
+  font-weight: bolder;
+}
+
+
 #btn-clearFilters,
 #status-filter,
 #gender-filter,
@@ -190,7 +225,7 @@ input,
 .slime{
   position: absolute;
   left: 58%;
-  top:38.3%;
+  top:36.8%;
   margin-left: 20px
 }
 
@@ -374,23 +409,18 @@ span {
   color: #e3dde0;
 }
 
-.btn-portal{
-  margin-top: 100px;
-  margin-left: 500px;
-  width: 600px;
-  height: 600px;
-
-}
 .portal-menu {
-  top: 28%;
+  top: 27%;
   position: absolute;
   width: 200px;
-  left: 42%;
+  left: 40%;
   height: 200px;
 }
 
 .img-title {
   margin-top: -35px;
+  width: 550px;
+  height: auto;
 }
 
 
@@ -507,12 +537,3 @@ span {
   }
 }
 
-.cursor {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  transition: 100ml;
-  background: url(../img/arma-cursor.gif);
-  background-size: contain;
-  background-repeat: no-repeat;
-}

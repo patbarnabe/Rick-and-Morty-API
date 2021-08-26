@@ -1,0 +1,32 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(./img/black-wallpaper.jpg);
+  box-sizing: border-box;
+  height: 100vh;
+  font-family: 'Righteous', cursive;
+  overflow: hidden;
+}
+
+.cursor {
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    transition: 100ml;
+    background: url(../img/arma-cursor.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+.portal-index {
+  height: 500px;
+  width: auto;
+}
+
+.btn-portal{
+  margin-top: 100px;
+  margin-left: 500px;
+  width: 600px;
+  height: 600px;
+}

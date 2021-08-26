@@ -47,9 +47,9 @@ function mainFunction(data) {
               <div class="back-card">
                 <span> <h3>Episódios:</h3> </span>
                   <p class="info">${episode.map((i) => i.replaceAll(/[^0-9]/g, " "))}</p>
-                  <span><h3>Species</h3></span>
+                  <span><h3>Espécie</h3></span>
                   <p>${species}</p>
-                  <span><h3>Location</h3></span>
+                  <span><h3>Localização</h3></span>
                   <p>${location.name}</p>
               </div>
             </div>
@@ -114,10 +114,11 @@ function mainFunction(data) {
     printCardsGeneric(charactersByName);
   }
   searchInput.addEventListener("keyup", searchByName);
-
-  const cursor = document.querySelector('.cursor');
-// cursor
-  document.addEventListener('mousemove', e => {
-    cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: "+(e.pageX - 15) + "px;"); 
-  })
 }
+
+const cursor = document.querySelector('.cursor');
+    // cursor
+    document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", "top: " + (e.pageY + 10) + "px; left: "+(e.pageX - 100) + "px;"); 
+})
+
