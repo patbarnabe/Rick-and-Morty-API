@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rick and Morty</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="sortcut icon" href="img/portal-icon.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <h1>
+      <img class="img-title" src="./img/iconTitle.png" alt="Rick and Morty">
+      <p>
+        <a class="goback-btn" href="main.html">Voltar</a>
+      </p>
+    </h1>
+
+  </header>
+  <main>
+    <section class="allCharts">
+      <div class="statusChartContainer"><p class="chartsTittle">Status</p><div id="statusChart"></div></div>
+      <div class="genderChartContainer"><p class="chartsTittle">Gênero</p><div id="genderChart"></div></div>
+      <div class="speciesChartContainer"><p class="chartsTittle">Espécie</p><div id="speciesChart"></div></div>
+    </section>
+  </main>
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+  <script>
+    fetch("./data/rickandmorty/rickandmorty.json")
+      .then(response => response.json())
+      .then(data => {
+        google.charts.load('current', { packages: ['corechart'] });
+        google.charts.setOnLoadCallback(drawStatusChart);
+        google.charts.setOnLoadCallback(drawGenderChart);
+        google.charts.setOnLoadCallback(drawSpeciesChart);
+        const dataRM = data.results;
+        const aliveFilter = dataRM.filter(results => results.status === "Alive");
+        const deadFilter = dataRM.filter(results => results.status === "Dead");
+        const unknownStatusFilter = dataRM.filter(results => results.status === "unknown");
+
+        const maleFilter = dataRM.filter(results => results.gender === "Male");
+        const femaleFilter = dataRM.filter(results => results.gender === "Female");
+        const unknownGenderFilter = dataRM.filter(results => results.gender === "unknown");
+        const genderlessFilter = dataRM.filter(results => results.gender === "Genderless");
+
+        const alienFilter = dataRM.filter(results => results.species === "Alien");
+        const animalFilter = dataRM.filter(results => results.species === "Animal");
+        const cronenbergFilter = dataRM.filter(results => results.species === "Cronenberg");
+        const diseaseFilter = dataRM.filter(results => results.species === "Disease");
+        const humanFilter = dataRM.filter(results => results.species === "Human");
+        const humanoidFilter = dataRM.filter(results => results.species === "Humanoid");
+        const mythologFilter = dataRM.filter(results => results.species === "Mytholog");
+        const parasiteFilter = dataRM.filter(results => results.species === "Parasite");
+        const poopybuttholeFilter = dataRM.filter(results => results.species === "Poopybutthole");
+        const robotFilter = dataRM.filter(results => results.species === "Robot");
+        const vampireFilter = dataRM.filter(results => results.species === "Vampire");
+        const unknownSpeciesFilter = dataRM.filter(results => results.species === "unknown");
+
+
+
+        function drawStatusChart() {
+          const container = document.querySelector('#statusChart')
+
+          const dataChart = new google.visualization.arrayToDataTable([
+            ['Status', 'Status'],
+            ['Vivos', aliveFilter.length],
+            ['Mortos', deadFilter.length],
+            ['Desconhecidos', unknownStatusFilter.length]
+          ])
+          const options = {
+            height: 300,
+            width: 520,
+            is3D: true,
+            backgroundColor: { fill: '#2BF14B',  fillOpacity: 0.1,},
+            chartArea: {width:'90%',height:'75%'},
+            legend: { textStyle: { color: 'white', fontSize: 12 } },
+            colors: ['blue','#00FF17', '#FA00FF']
+        }
+
+        const chart = new google.visualization.PieChart(container)
+        chart.draw(dataChart, options)
+      }
+
+        function drawGenderChart() {
+          const container = document.querySelector('#genderChart')
+
+          const dataChart = new google.visualization.arrayToDataTable([
+            ['Gênero', 'Gênero'],
+            ['Masculinos', maleFilter.length],
+            ['Femininos', femaleFilter.length],
+            ['Desconhecidos', unknownGenderFilter.length],
+            ['Sem gênero', genderlessFilter.length]
+          ])
+          const options = {
+            height: 300,
+            width: 520,
+            is3D: true,
+            backgroundColor: { fill: '#2BF14B',  fillOpacity: 0.1},
+            chartArea: {width:'90%',height:'75%'},
+            legend: { textStyle: { color: 'white', fontSize: 12 } },
+            colors: ['blue', '#00DBFF', '#FA00FF', '#00FF17'],
+          }
+
+          const chart = new google.visualization.PieChart(container)
+          chart.draw(dataChart, options)
+        }
+
+        function drawSpeciesChart() {
+          const container = document.querySelector('#speciesChart')
+
+          const dataChart = new google.visualization.arrayToDataTable([
+            ['Espécie', 'Espécie'],
+            ['Alienígena', alienFilter.length],
+            ['Animal', animalFilter.length],
+            ['Cronenberg', cronenbergFilter.length],
+            ['Doença', diseaseFilter.length],
+            ['Humano', humanFilter.length],
+            ['Humanóide', humanoidFilter.length],
+            ['Mytholog', mythologFilter.length],
+            ['Parasita', parasiteFilter.length],
+            ['Poopybutthole', poopybuttholeFilter.length],
+            ['Robô', robotFilter.length],
+            ['Vampiro', vampireFilter.length],
+            ['Indefinido', unknownSpeciesFilter.length],
+          ])
+          const options = {
+            height: 300,
+            width: 520,
+            is3D: true,
+            backgroundColor: { fill: '#2BF14B',  fillOpacity: 0.1},
+            chartArea: {width:'90%',height:'75%'},
+            legend: { textStyle: { color: 'white', fontSize: 12 } },
+            colors: ['#00DBFF', '#00FF17', 'blue', 'yellow', '#FA00FF', '#0A758B', '#3DE28E', '#FFFAF2', '#640CE8', '#FF3636', '#025373', '#730220' ]
+          }
+
+          const chart = new google.visualization.PieChart(container)
+          chart.draw(dataChart, options)
+        }
+      })
+
+  </script>
+  <script src="./charts.js" type="module"></script>
+  <!---inserir outro JS-->
+</body>
+
+</html>

@@ -170,6 +170,36 @@ input,
   transition: 1s;
 }
 
+.goback-btn {
+  text-decoration:none;
+  color:black;
+  background: #2BF14B;
+  border-radius: 40% 60% 50% 40%/40% 40% 60% 60%;
+  animation: anime 7s linear infinite;
+  transition: 1s;
+  padding: 22px;
+}
+
+.allCharts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.statusChartContainer, .genderChartContainer, .speciesChartContainer{
+  margin: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.chartsTittle{
+  color:#e3dde0;
+  text-align: start;
+  font-weight: bolder;
+}
+
+
 #btn-clearFilters,
 #status-filter,
 #gender-filter,
