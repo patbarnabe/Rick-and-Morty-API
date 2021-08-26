@@ -208,6 +208,17 @@ span {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  justify-content: space-evenly;
+}
+
+.statusChartContainer, .genderChartContainer, .speciesChartContainer{
+  margin: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.chartsTittle{
+  color:#e3dde0;
+  text-align: start;
 }
 
 

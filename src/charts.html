@@ -16,14 +16,15 @@
   <header>
     <h1>
       <img src="./img/iconTitle.png" alt="Rick and Morty">
+      <p><a href="./index.html">Voltar</a></p>
     </h1>
 
   </header>
   <main>
     <section class="allCharts">
-    <div id="statusChart" class="statusChart"></div>
-    <div id="genderChart"></div>
-    <div id="speciesChart"></div>
+      <div class="statusChartContainer"><p class="chartsTittle">Status</p><div id="statusChart"></div></div>
+      <div class="genderChartContainer"><p class="chartsTittle">Gênero</p><div id="genderChart"></div></div>
+      <div class="speciesChartContainer"><p class="chartsTittle">Espécie</p><div id="speciesChart"></div></div>
     </section>
   </main>
   <script src="https://www.gstatic.com/charts/loader.js"></script>
@@ -70,20 +71,15 @@
             ['Desconhecidos', unknownStatusFilter.length]
           ])
           const options = {
-            title: 'Status',
             height: 300,
             width: 520,
             is3D: true,
-            backgroundColor: { fill: '#02735E',  fillOpacity: 0.1, strokeWidth: 5, stroke: '#02735E'},
+            backgroundColor: { fill: '#2BF14B',  fillOpacity: 0.1,},
             chartArea: {width:'90%',height:'75%'},
-            title: { TextStyle: { color: 'blue'} },
-            legend: { textStyle: { color: '#22a2bc', fontSize: 12 } },
-            colors: ['#038C65', '#004411', 'pink'],
+            legend: { textStyle: { color: 'white', fontSize: 12 } },
+            colors: ['blue','#00FF17', '#FA00FF']
         }
 
-        // const chart = new google.visualization.ColumnChart(container)
-        // const chart = new google.visualization.BarChart(container)
-        // const chart = new google.visualization.LineChart(container)
         const chart = new google.visualization.PieChart(container)
         chart.draw(dataChart, options)
       }
@@ -99,19 +95,15 @@
             ['Sem gênero', genderlessFilter.length]
           ])
           const options = {
-            title: 'Gênero dos personagens',
             height: 300,
             width: 520,
             is3D: true,
-            backgroundColor: { fill: '#02735E',  fillOpacity: 0.1, strokeWidth: 5, stroke: '#02735E'},
+            backgroundColor: { fill: '#2BF14B',  fillOpacity: 0.1},
             chartArea: {width:'90%',height:'75%'},
-            title: { TextStyle: { color: 'blue'} },
-            legend: { textStyle: { color: '#22a2bc', fontSize: 12 } },
+            legend: { textStyle: { color: 'white', fontSize: 12 } },
+            colors: ['blue', '#00DBFF', '#FA00FF', '#00FF17'],
           }
 
-          // const chart = new google.visualization.ColumnChart(container)
-          // const chart = new google.visualization.BarChart(container)
-          // const chart = new google.visualization.LineChart(container)
           const chart = new google.visualization.PieChart(container)
           chart.draw(dataChart, options)
         }
@@ -135,19 +127,15 @@
             ['Indefinido', unknownSpeciesFilter.length],
           ])
           const options = {
-            title: 'Espécies',
             height: 300,
             width: 520,
             is3D: true,
-            backgroundColor: { fill: '#02735E',  fillOpacity: 0.1, strokeWidth: 5, stroke: '#02735E'},
+            backgroundColor: { fill: '#2BF14B',  fillOpacity: 0.1},
             chartArea: {width:'90%',height:'75%'},
-            title: { TextStyle: { color: 'blue'} },
-            legend: { textStyle: { color: '#22a2bc', fontSize: 12 } },
+            legend: { textStyle: { color: 'white', fontSize: 12 } },
+            colors: ['#00DBFF', '#00FF17', 'blue', 'yellow', '#FA00FF', '#0A758B', '#3DE28E', '#FFFAF2', '#640CE8', '#FF3636', '#025373', '#730220' ]
           }
 
-          // const chart = new google.visualization.ColumnChart(container)
-          // const chart = new google.visualization.BarChart(container)
-          // const chart = new google.visualization.LineChart(container)
           const chart = new google.visualization.PieChart(container)
           chart.draw(dataChart, options)
         }
