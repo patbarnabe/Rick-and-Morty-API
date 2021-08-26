@@ -27,26 +27,35 @@ function mainFunction(data) {
       .map(
         ({ name, status, gender, image, episode }) =>
           `<div class="cards_container">
-         <div class="character_img">
-           <img src="${image}">
-         </div>
-          <div class="character_info">
-          <span id="character_name">
-            <h3>${name}</h3>
-           </span>
-           <span id="character_status">${status} - ${gender}</span>
-           <span id="episodes">Episódios</span>
-             <p>${episode.map((i) => i.replaceAll(/[^0-9]/g, " "))}</p>
-          </div>
-      </div>`
+            <div class="inner-div">
+              <div class="front-card">
+                <span id="character_name">
+                  <h3>${name}</h3>
+                </span>
+                <div class="moldura">
+                  <img src="https://i.ibb.co/svrkzbn/gosma-big-nova-semfundo-pho.png">
+                </div>  
+                <div class="character_img">
+                  <img src="${image}">
+                </div>
+                <div class="character_info">
+                  <span class="character_status"><p class="info">${status}</p></span>
+                  <span class="character_gender"><p class="info">${gender}</p></span>
+                </div>
+              </div>
+              <div class="back-card">
+                <span> <h3>Episódios:</h3> </span>
+                  <p class="info">${episode.map((i) => i.replaceAll(/[^0-9]/g, " "))}</p>
+              </div>
+            </div>
+          </div>`
       )
-      .join("");
+      .join("")
 
     cards.innerHTML = "";
     cards.innerHTML += genericCards;
-  }
-
-
+  };
+  
   const totalCharacters = computeStats.characters(data.results);
 
   printTotalCharacters.innerHTML =
