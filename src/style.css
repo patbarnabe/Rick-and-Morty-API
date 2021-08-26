@@ -301,6 +301,13 @@ span {
   color: #e3dde0;
 }
 
+.btn-portal{
+  margin-top: 100px;
+  margin-left: 500px;
+  width: 600px;
+  height: 600px;
+
+}
 .portal-menu {
   top: 28%;
   position: absolute;
@@ -425,4 +432,14 @@ span {
   .menu-filter {
     flex-direction: column;
   }
+}
+
+.cursor {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transition: 100ml;
+  background: url(../img/arma-cursor.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
