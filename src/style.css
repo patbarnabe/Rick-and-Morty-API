@@ -10,6 +10,25 @@ body {
   font-family: 'Righteous', cursive;
 }
 
+/*Color*/
+
+:root {
+  --background-color: #38cd4e1e;
+  --white-color: #FAFAFA;
+  --grey-color: #E3DDE0;
+  --black-color: #040911;
+  --brown-color: #221C20;
+  --green-fluor: #87f583;
+  --green-hover: #05f2af;
+  --green-shadow1: #48ff00;
+  --green-shadow2: #00ffd5;
+  --green-shadow3: #2BF14B;
+  --green-border: #2bf14c49;
+  --green-card: #2bf14bbf;
+  --card-color: #0cf72f08;
+}
+
+
 main {
   margin: 15px;
 }
@@ -22,7 +41,7 @@ header {
 
 h1 {
   font-size: 50px;
-  color: white;
+  color: var(--white-color);
   text-align: center;
   margin: 0 0 40px 0;
 }
@@ -33,7 +52,7 @@ h1 {
 }
 
 .menu-filter {
-  background-color: #38cd4e1e;
+  background-color: var(--background-color);
   width: 95%;
   border-radius: 8px;
   margin-bottom: 50px;
@@ -65,13 +84,14 @@ h1 {
 }
 
 option {
-  color: #221C20;
+  color: var(--brown-color);
   font-size: 18px;
 }
 
 input,
 select,
-button {
+button,
+slime {
   margin: 10px;
   outline: none;
   border: none;
@@ -85,20 +105,20 @@ button {
   width: 150px;
   height: 45px;
   border-radius: 20px;
-  background: #87f583;
-  color: black;
+  background:var(--green-fluor);
+  color: var(--black-color);
   cursor: pointer;
-  border: 1px solid #87f583;
+  border: 1px solid var(--green-fluor);
   text-align-last: center;
 }
 
 select:hover {
-  background: #05f2af;
-  border: 1px solid #05f2af;
+  background: var(--green-hover);
+  border: 1px solid var(--green-hover);
   transition-duration: 0.5s;
   cursor: pointer;
   height: 45px;
-  box-shadow: 0px 0px 10px #48ff00, 0px 0px 20px #00ffd5, 0px 0px 30px #2BF14B;
+  box-shadow: 0px 0px 10px var(--green-shadow1), 0px 0px 20px var(--green-shadow2), 0px 0px 30px var(--green-shadow3);
 }
 
 input {
@@ -106,23 +126,23 @@ input {
   right: 20px;
   font-size: 16px;
   background: transparent;
-  color: white;
+  color: var(--white-color);
 }
 
 input:hover {
   cursor: pointer;
   height: 45px;
-  box-shadow: 0px 0px 10px #48ff00, 0px 0px 20px #00ffd5, 0px 0px 30px #2BF14B;
+  box-shadow: 0px 0px 10px var(--green-shadow1), 0px 0px 20px var(--green-shadow2), 0px 0px 30px var(--green-shadow3);
 }
 
 input,
 #sort-btn {
   border-radius: 20px;
-  border: 1px solid #87f583
+  border: 1px solid var(--green-fluor);
 }
 
 .search {
-  border: 1px solid #87f583;
+  border: 1px solid var(--green-fluor);
   width: 35%;
   display: flex;
   justify-content: flex-start;
@@ -132,7 +152,7 @@ input,
 #sort-btn {
   position: relative;
   right: 60px;
-  width:100px;
+  width:125px;
   height:60px;
 }
 
@@ -140,18 +160,21 @@ input,
   width: 80px;
   height: 45px;
   border-radius: 20px;
-  color: black;
-  background: #87f583;
-  border: 1px solid #87f583;
+  color: var(--black-color);
+  background: var(--green-fluor);
+  border: 1px solid var(--green-fluor);
   font-family: 'Righteous', cursive;
 }
 
-#btn-clearFilters:hover, #sort-btn:hover, #status-filter:hover, #gender-filter:hover {
-  background: #05f2af;
-  border: 1px solid #05f2af;
+#btn-clearFilters:hover, 
+#sort-btn:hover, 
+#status-filter:hover, 
+#gender-filter:hover {
+  background: var(--green-hover);
+  border: 1px solid var(--green-hover);
   transition-duration: 0.5s;
   cursor: pointer;
-  box-shadow: 0px 0px 10px #48ff00, 0px 0px 20px #00ffd5, 0px 0px 30px #2BF14B;
+  box-shadow: 0px 0px 10px var(--green-shadow1), 0px 0px 20px var(--green-shadow2), 0px 0px 30px var(--green-shadow3);
 }
 
 #btn-clearFilters,
@@ -160,11 +183,11 @@ input,
 #sort-btn,
 .slime {
   text-decoration:none;
-  color:black;
+  color: var(--black-color);
   display:flex;
   justify-content: center;
   align-items:center;
-  background: #2BF14B;
+  background: var(--green-shadow3);
   border-radius: 40% 60% 50% 40%/40% 40% 60% 60%;
   animation: anime 7s linear infinite;
   transition: 1s;
@@ -172,8 +195,8 @@ input,
 
 .goback-btn {
   text-decoration:none;
-  color:black;
-  background: #2BF14B;
+  color: var(--black-color);
+  background: var(--green-shadow3);
   border-radius: 40% 60% 50% 40%/40% 40% 60% 60%;
   animation: anime 7s linear infinite;
   transition: 1s;
@@ -194,7 +217,7 @@ input,
 }
 
 .chartsTittle{
-  color:#e3dde0;
+  color: var(--grey-color);
   text-align: start;
   font-weight: bolder;
 }
@@ -204,7 +227,7 @@ input,
 #status-filter,
 #gender-filter,
 .slime {
-  width:80px;
+  width: 125px;
   height:60px;
 }
 
@@ -223,16 +246,19 @@ input,
 }
 
 .slime{
-  position: absolute;
-  left: 58%;
-  top:36.8%;
-  margin-left: 20px
+  position:absolute;
+  left: 1110px;
+  top: 275px;
+  margin-left: 20px;
+  z-index:999; 
+  padding:1px;
+  overflow:hidden;
 }
 
 .slime:hover{
-  background: #05f2af;
-  border: 1px solid #05f2af;
-  box-shadow: 0px 0px 10px #48ff00, 0px 0px 20px #00ffd5, 0px 0px 30px #2BF14B;
+  background: var(--green-hover);
+  border: 1px solid var(--green-hover);
+  box-shadow: 0px 0px 10px var(--green-shadow1), 0px 0px 20px var(--green-shadow2), 0px 0px 30px var(--green-shadow3);
   transition: 1s;
 }
 
@@ -289,8 +315,8 @@ input,
 .back-card {
   position: relative;
   backface-visibility: hidden;
-  box-shadow: 1px 1px 8px #2bf14bbf;
-  background-color: #0cf72f08;
+  box-shadow: 1px 1px 8px var(--green-card);
+  background-color: var(--card-color);
   height: 360px;
   width: 240px;
   border-radius:10px;
@@ -300,7 +326,7 @@ input,
 .back-card{
   transform: rotateY(180deg);
   position: absolute;
-  box-shadow: 1px 1px 8px #2bf14bbf;
+  box-shadow: 1px 1px 8px var(--green-card);
   background: #000 url(https://i.ibb.co/bHrzRqm/background1.jpg);
 }
 
@@ -311,7 +337,7 @@ input,
 h3 {
   font-size: 18px;
   letter-spacing: 1px;
-  color: white;
+  color: var(--white-color);
   text-shadow: 0.1em 0.1em rgb(0, 0, 0);
   font-weight: bold;
   font-family: 'Righteous', cursive;
@@ -345,12 +371,12 @@ img {
  
 .info{
   border-radius: 10px;
-  border: 1px solid #2bf14c49;
+  border: 1px solid var(--green-border);
   margin: 5px;
   margin: 20px;
 }
 .info p {
-  color: white;
+  color: var(--white-color);
   -webkit-text-stroke-width: 0.3px;
   -webkit-text-stroke-color: #000;
 }
@@ -377,14 +403,8 @@ p {
  
 p {
   font-size: 16px;
-  color: white;
+  color: var(--white-color);
 }
-
-
-/*#episodes {
-  margin-top: 10px;
-  font-weight: 600;
-}*/
 
 .stats {
   margin: 18px;
@@ -399,21 +419,21 @@ span {
 
 #totalCharacters, #genderAverage {
   border-radius: 20px;
-  background: #221C20;
+  background: var(--brown-color);
   border: 1px solid;
   margin: 5px;
   padding: 5px;
 }
 
 .text {
-  color: #e3dde0;
+  color: var(--grey-color);
 }
 
 .portal-menu {
-  top: 27%;
+  top: 195px;
   position: absolute;
   width: 200px;
-  left: 40%;
+  left: 42%;
   height: 200px;
 }
 
@@ -536,4 +556,3 @@ span {
     flex-direction: column;
   }
 }
-
