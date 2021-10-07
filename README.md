@@ -6,7 +6,7 @@
 
 ## Índice
 
-1. [Sobre Rick and Morty](#gun-sobre-ricky-and-morty)
+1. [Sobre Rick and Morty](#gun-sobre-rick-and-morty)
 2. [O Projeto](#computer-o-projeto)
 3. [Definição do Produto](#dart-definição-do-produto)
 4. [Planejamento e Organização](#memo-planejamento-e-organização)
