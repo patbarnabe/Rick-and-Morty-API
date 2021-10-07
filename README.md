@@ -31,10 +31,10 @@ Data Lovers é um guia para os fãs dessa instigante animação, com ele é poss
 
 ---
 
-## Planejamento 
+## Planejamento e Organização
 O projeto foi realizado por um squad compost pot 7 desenvolvedoras front-end dentro do prazo de 3 dias. O primeiro desafio encontrado foi fazer um planejamento no qual todas pudessem colaborar com ideias, referências e funcionalidades. Para isso, a organização e o planejamento foram feitos em conjunto através do Trello, usando o método FDP (Fatiar, Dispensar e Priorizar). Essa ferramenta também foi utilizada para compartilhar referências e atribuir as tarefas individuais a serem feitas por cada integrante do squad.
 
-![img](./src/img/paleta-cores.png)
+![img](./src/img/trello.png)
 
 ---
 
@@ -51,6 +51,10 @@ Dessa forma, facilitaria a escolha do episódio à assistir e a visualização d
 O processo de criação foi pensado buscando um layout intuitivo e de fácil compreensão, que mostrasse apenas as informações principais, como imagem/especificações dos personagens, opções de filtro e estatísticas.
 
 Durante o processo, modificamos o design original, removendo o slider maior, pois não tinha uma função definida e o slide com apenas quatro personagens, para que pudessemos printar todos os cards na tela e não somente alguns.
+
+Após trocar essas referências, usamos o Figma para desenvolver o protótipo de alta fidelidade, tendo como base a paleta de cores que escolhemos inspirada na série, onde definimos os cards e a diagramação do site. Trabalhamos com branch’s no github para otimizar o trabalho do squad.
+
+![img](./src/img/layout.png)
 
 ---
 
