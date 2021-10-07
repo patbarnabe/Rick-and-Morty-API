@@ -155,8 +155,14 @@ Por fim, mudamos o idioma das opções de select para português.
 ```
 
 ## ✔️ Resultados
-![img](./img/antes.gif)
 
+![img](./img/gif-portal.gif)
+<br><br>
+![img](./img/gif-filtro.gif)
+<br><br>
+![img](./img/gif-pesquisa.gif)
+<br><br>
+![img](./img/gif-graficos.gif)
 
 ## :arrows_clockwise: Antes e Depois
 
