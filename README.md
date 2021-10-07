@@ -6,15 +6,17 @@
 
 ## Índice
 
-1. [Definição do Produto](#dart-definição-do-produto)
-2. [Histórias de Usuários](#pencil2-histórias-de-usuários)
-3. [Protótipos](#art-protótipos)
-4. [Como Utilizar](#gear-como-utilizar)
-5. [Testes de Usabilidade](#busts_in_silhouette-testes-de-usabilidade)
-6. [Tecnologias Utilizadas](#robot-tecnologias-utilizadas)
-7. [Estrutura dos Principais Arquivos](#file_folder-estrutura-dos-principais-arquivos)
-8. [Resultados](#%EF%B8%8F-resultados)
-9. [Sobre as desenvolvedoras](#woman_technologist-sobre-as-desenvolvedoras)
+1. [Sobre Rick and Morty](#gun-sobre-ricky-and-morty)
+2. [O Projeto](#computer-o-projeto)
+3. [Definição do Produto](#dart-definição-do-produto)
+4. [Planejamento e Organização](#memo-planejamento-e-organização)
+5. [Histórias de Usuários](#pencil2-histórias-de-usuários)
+6. [Protótipos](#art-protótipos)
+7. [Testes de Usabilidade](#busts_in_silhouette-testes-de-usabilidade)
+8. [Tecnologias Utilizadas](#robot-tecnologias-utilizadas)
+9. [Estrutura dos Principais Arquivos](#file_folder-estrutura-dos-principais-arquivos)
+10. [Resultados](#%EF%B8%8F-resultados)
+11. [Sobre as desenvolvedoras](#woman_technologist-sobre-as-desenvolvedoras)
 
 ---
 ## :gun: Sobre Rick and Morty
@@ -27,14 +29,14 @@ Rick é um cientista brilhante e está sempre em busca de grandes experiências,
 
 ---
 
-## O Projeto
+## :computer: O Projeto
 
 Data Lovers é um guia para os fãs dessa instigante animação, com ele é possível encontrar os personagens da série e filtrá-los de acordo com status e gênero, para que o usuário descubra os episódios em que ele(a) aparecem e possa escolher um para assistir. Também é possível pesquisar por nome e ordenar por número de episódios.
 Assim, foram feitas alterações e incrementos no projeto para que ele se adequasse melhor à necessidade de usuário dentro do prazo estimado pelo desafio.
 
 ---
 
-## Definição de produto
+## :dart: Definição do Produto
 
 A aplicação foi desenvolvida para que o usuário possa navegar no site de forma simples e prática, dando destaque aos cards dos personagens e as informações mais relevantes que o usuário deseja encontrar.
 A série possui muitos personagens, com diferentes características e assim, buscamos facilitar ao usuário encontrá-los, utilizando opções de filtros, como status e gênero.
@@ -42,14 +44,14 @@ Dessa forma, facilitaria a escolha do episódio à assistir e a visualização d
 
 ---
 
-## Planejamento e Organização
+## :memo: Planejamento e Organização
 O projeto foi realizado por um squad compost pot 7 desenvolvedoras front-end dentro do prazo de 3 dias. O primeiro desafio encontrado foi fazer um planejamento no qual todas pudessem colaborar com ideias, referências e funcionalidades. Para isso, a organização e o planejamento foram feitos em conjunto através do Trello, usando o método FDP (Fatiar, Dispensar e Priorizar). Essa ferramenta também foi utilizada para compartilhar referências e atribuir as tarefas individuais a serem feitas por cada integrante do squad.
 
 ![img](./img/trello.png)
 
 ---
 
-## Layout
+## :art: Protótipos
 
 O processo de criação foi pensado buscando um layout intuitivo e de fácil compreensão, que mostrasse apenas as informações principais, como imagem/especificações dos personagens, opções de filtro e estatísticas.
 
@@ -61,7 +63,7 @@ Após trocar essas referências, usamos o Figma para desenvolver o protótipo de
 
 ---
 
-## Histórias de usuário
+## :pencil2: Histórias de Usuários
 
 1) _"O usuário está assistindo a série e gostaria de saber mais sobre os personagens, em qual episódio o personagem aparece, para escolher um ep. para assistir."_
 
@@ -108,7 +110,7 @@ Após trocar essas referências, usamos o Figma para desenvolver o protótipo de
 
 ---
 
-## Testes de usabilidade:
+## :busts_in_silhouette: Testes de Usabilidade
 
 De acordo com os resultados dos testes de usabilidade, tiramos o botão de filtrar e, agora, o conteúdo é filtrado assim que o usuário clica na opção desejada de filtro.
 E também diferenciamos os seletores de filtro dos outros botões a fim de deixar a experiência do usuário mais intuitiva.
@@ -116,7 +118,7 @@ Por fim, mudamos o idioma das opções de select para português.
 
 ---
 
-## :robot: Tecnologias utilizadas
+## :robot: Tecnologias Utilizadas
 
 | Ferramenta | Descrição |
 | --- | --- |
@@ -154,33 +156,39 @@ Por fim, mudamos o idioma das opções de select para português.
 
 ## ✔️ Resultados
 
+Aqui podemos observar bem as alterações do antes e depois do projeto e um dos nossos maiores objetivos foi proporcionar ao usuário uma imersão ao universo da série trazendo elementos como o portal, as cores e também trazendo mais informações através dos flip card onde o usuário pode encontrar os dados sobre as espécies e localização dos personagens. Também adicionamos a página de análises onde são apresentadas todas  as estatísticas sobre o universo da série. 
+Bom, essa foi uma breve apresentação do nosso projeto, esperamos que vocês tenham gostado.
+
+
 ### Antes
 
-
+![img](./img/antes.png)
 
 ### Depois
+
+![img](./img/depois.png)
 
 
 ---
 ## :woman_technologist: Sobre as desenvolvedoras
 
 ### Bruna Belo
-- [LinkedIn](https://www.linkedin.com/in/laís-ayume-lima-mune)
+- [LinkedIn](https://www.linkedin.com/in/bruna-belo/)
 
 ### Érica Serpa
-- [LinkedIn](https://www.linkedin.com/in/laís-ayume-lima-mune)
+- [LinkedIn](https://www.linkedin.com/in/ericaserpa/)
 
 ### Larissa Maranho
-- [LinkedIn](https://www.linkedin.com/in/laís-ayume-lima-mune)
+- [LinkedIn](https://www.linkedin.com/in/larissa-maranho/)
 
 ### Larissa Vilela
-- [LinkedIn](https://www.linkedin.com/in/laís-ayume-lima-mune)
+- [LinkedIn](https://www.linkedin.com/in/larissa-vilela-sobral/)
 
 ### Michele Martins
-- [LinkedIn](https://www.linkedin.com/in/laís-ayume-lima-mune)
+- [LinkedIn](https://www.linkedin.com/in/michele-valerio-martins/)
 
 ### Patrícia Barnabé
 - [LinkedIn](https://www.linkedin.com/in/patriciabarnabe)
 
 ### Thais Fernandes
-- [LinkedIn](https://www.linkedin.com/in/laís-ayume-lima-mune)
+- [LinkedIn](https://www.linkedin.com/in/thaisfernandesjulio/)
