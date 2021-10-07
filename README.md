@@ -16,7 +16,8 @@
 8. [Tecnologias Utilizadas](#robot-tecnologias-utilizadas)
 9. [Estrutura dos Principais Arquivos](#file_folder-estrutura-dos-principais-arquivos)
 10. [Resultados](#%EF%B8%8F-resultados)
-11. [Sobre as desenvolvedoras](#woman_technologist-sobre-as-desenvolvedoras)
+11. [Antes e Depois](#arrows_clockwise-antes-e-depois)
+12. [Sobre as desenvolvedoras](#woman_technologist-sobre-as-desenvolvedoras)
 
 ---
 ## :gun: Sobre Rick and Morty
@@ -153,12 +154,13 @@ Por fim, mudamos o idioma das opções de select para português.
 
 ```
 
-
 ## ✔️ Resultados
+![img](./img/antes.png)
 
-Aqui podemos observar bem as alterações do antes e depois do projeto e um dos nossos maiores objetivos foi proporcionar ao usuário uma imersão ao universo da série trazendo elementos como o portal, as cores e também trazendo mais informações através dos flip card onde o usuário pode encontrar os dados sobre as espécies e localização dos personagens. Também adicionamos a página de análises onde são apresentadas todas  as estatísticas sobre o universo da série. 
-Bom, essa foi uma breve apresentação do nosso projeto, esperamos que vocês tenham gostado.
 
+## :arrows_clockwise: Antes e Depois
+
+Aqui as alterações são vistas facilmente no antes e depois do projeto. Um dos maiores objetivos das transformações realizadas foi proporcionar ao usuário uma imersão ao universo da série trazendo elementos como o portal, as cores e também trazendo mais informações através dos flip card onde o usuário pode encontrar os dados sobre as espécies e localização dos personagens. Também foi adicionada a página de análises onde são apresentadas todas  as estatísticas sobre o universo da série. 
 
 ### Antes
 
@@ -172,23 +174,16 @@ Bom, essa foi uma breve apresentação do nosso projeto, esperamos que vocês te
 ---
 ## :woman_technologist: Sobre as desenvolvedoras
 
-### Bruna Belo
-- [LinkedIn](https://www.linkedin.com/in/bruna-belo/)
+### [Bruna Belo](https://www.linkedin.com/in/bruna-belo/)
 
-### Érica Serpa
-- [LinkedIn](https://www.linkedin.com/in/ericaserpa/)
+### [Érica Serpa](https://www.linkedin.com/in/ericaserpa/)
 
-### Larissa Maranho
-- [LinkedIn](https://www.linkedin.com/in/larissa-maranho/)
+### [Larissa Maranho](https://www.linkedin.com/in/larissa-maranho/)
 
-### Larissa Vilela
-- [LinkedIn](https://www.linkedin.com/in/larissa-vilela-sobral/)
+### [Larissa Vilela](https://www.linkedin.com/in/larissa-vilela-sobral/)
 
-### Michele Martins
-- [LinkedIn](https://www.linkedin.com/in/michele-valerio-martins/)
+### [Michele Martins](https://www.linkedin.com/in/michele-valerio-martins/)
 
-### Patrícia Barnabé
-- [LinkedIn](https://www.linkedin.com/in/patriciabarnabe)
+### [Patrícia Barnabé](https://www.linkedin.com/in/patriciabarnabe)
 
-### Thais Fernandes
-- [LinkedIn](https://www.linkedin.com/in/thaisfernandesjulio/)
+### [Thais Fernandes](https://www.linkedin.com/in/thaisfernandesjulio/)
