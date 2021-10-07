@@ -116,11 +116,71 @@ Por fim, mudamos o idioma das opções de select para português.
 
 ---
 
-## Tecnologias
+## :robot: Tecnologias utilizadas
 
-- Javascript
-- CSS3
-- HTML5
-- Json
-- Jest
+| Ferramenta | Descrição |
+| --- | --- |
+| `HTML 5` | Linguagem de marcação |
+| `CSS3` | Linguagem de estilização |
+| `JavaScript` |  Linguagem de programação interpretada estruturada|
+| `Jest` | Framework de teste em JavaScript|
+| `Node.js` | Software de execução de códigos JavaScript|
+| `Git e GitHub` | Sistemas de controle de versões distribuídos|
 
+---
+
+## :file_folder: Estrutura dos Principais Arquivos
+```
+.
+├── 📁 src
+|   ├── 📁 data 
+|   |   └── 📁 rickandmorty
+|   |       ├── 📄 rickandmorty.js
+|   |       ├── 📄 rickandmorty.json
+|   |       └── 📄 README.md   
+|   ├── 📁 img
+|   ├── 📄 data.js
+|   ├── 📄 index.html
+|   ├── 📄 main.js
+|   └── 📄 style.css
+├── 📁 test
+|   └── 📄 data.spec.js
+├── 📁 img
+├── 📄 README.md
+├── 📄 package.json
+
+```
+
+
+## ✔️ Resultados
+
+### Antes
+
+
+
+### Depois
+
+
+---
+## :woman_technologist: Sobre as desenvolvedoras
+
+### Bruna Belo
+- [LinkedIn](https://www.linkedin.com/in/laís-ayume-lima-mune)
+
+### Érica Serpa
+- [LinkedIn](https://www.linkedin.com/in/laís-ayume-lima-mune)
+
+### Larissa Maranho
+- [LinkedIn](https://www.linkedin.com/in/laís-ayume-lima-mune)
+
+### Larissa Vilela
+- [LinkedIn](https://www.linkedin.com/in/laís-ayume-lima-mune)
+
+### Michele Martins
+- [LinkedIn](https://www.linkedin.com/in/laís-ayume-lima-mune)
+
+### Patrícia Barnabé
+- [LinkedIn](https://www.linkedin.com/in/patriciabarnabe)
+
+### Thais Fernandes
+- [LinkedIn](https://www.linkedin.com/in/laís-ayume-lima-mune)
