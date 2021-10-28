@@ -175,6 +175,10 @@ input,
   transition: 1s;
 }
 
+#btn-clearFilters, #status-filter, #gender-filter {
+  margin-left: 30px;
+}
+
 .goback-btn {
   text-decoration:none;
   color:black;
@@ -412,6 +416,7 @@ span {
   position: absolute;
   width: 200px;
   left: 40%;
+  /* aqui */
   height: 200px;
 }
 
