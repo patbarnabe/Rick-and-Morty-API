@@ -227,10 +227,6 @@ input,
   100% {border-radius: 40% 60% 50% 40%/40% 40% 60% 60%;}
 }
 
-.slime{
-
-}
-
 .slime:hover{
   background: #05f2af;
   border: 1px solid #05f2af;
