@@ -57,6 +57,10 @@ h1 {
   height: 70px;
 }
 
+.menu-right-side a {
+  margin-right: 30px;
+}
+
 .menu-container {
   display: flex;
   align-content: center;
@@ -130,10 +134,11 @@ input,
 }
 
 #sort-btn {
-  position: relative;
-  right: 60px;
+  /* position: relative;
+  right: 60px; */
   width:100px;
   height:60px;
+  margin-right: 50px;
 }
 
 #btn-clearFilters {
@@ -223,10 +228,7 @@ input,
 }
 
 .slime{
-  position: absolute;
-  left: 58%;
-  top:36.8%;
-  margin-left: 20px
+
 }
 
 .slime:hover{
@@ -423,6 +425,32 @@ span {
   height: auto;
 }
 
+
+@media (max-width: 1204px) {
+  #btn-clearFilters, #status-filter, #gender-filter {
+    margin-left: 30px;
+  }
+
+  #sort-btn {
+    margin-right: 10px;
+  }
+
+  .menu-right-side a {
+    margin-right: 5px;
+  }
+
+  .portal-menu{
+    top: 33%;
+    position: absolute;
+    width: 200px;
+    left: 37%;
+    height: 200px;
+  }
+
+  input {
+    right: 0px;
+  }
+}
 
 @media (max-width: 901px) {
   .cards_container {

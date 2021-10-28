@@ -7,6 +7,9 @@ body {
   height: 100vh;
   font-family: 'Righteous', cursive;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cursor {
@@ -22,11 +25,4 @@ body {
 .portal-index {
   height: 500px;
   width: auto;
-}
-
-.btn-portal{
-  margin-top: 100px;
-  margin-left: 500px;
-  width: 600px;
-  height: 600px;
 }
