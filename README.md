@@ -34,6 +34,8 @@ Rick é um cientista brilhante e está sempre em busca de grandes experiências,
 
 Data Lovers é um guia para os fãs dessa instigante animação, com ele é possível encontrar os personagens da série e filtrá-los de acordo com status e gênero, para que o usuário descubra os episódios em que ele(a) aparecem e possa escolher um para assistir. Também é possível pesquisar por nome e ordenar por número de episódios.
 Assim, foram feitas alterações e incrementos no projeto para que ele se adequasse melhor à necessidade de usuário dentro do prazo estimado pelo desafio.
+Para acessar o site, clique [aqui](https://rickyandmorty-demoday.netlify.app/).
+
 
 ---
 
