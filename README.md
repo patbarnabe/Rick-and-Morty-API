@@ -180,16 +180,16 @@ Aqui as alterações são vistas facilmente no antes e depois do projeto. Um dos
 ---
 ## :woman_technologist: Sobre as desenvolvedoras
 
-### [Bruna Belo](https://www.linkedin.com/in/bruna-belo/)
+* ### [Bruna Belo](https://www.linkedin.com/in/bruna-belo/)
 
-### [Érica Serpa](https://www.linkedin.com/in/ericaserpa/)
+* ### [Érica Serpa](https://www.linkedin.com/in/ericaserpa/)
 
-### [Larissa Maranho](https://www.linkedin.com/in/larissa-maranho/)
+* ### [Larissa Maranho](https://www.linkedin.com/in/larissa-maranho/)
 
-### [Larissa Vilela](https://www.linkedin.com/in/larissa-vilela-sobral/)
+* ### [Larissa Vilela](https://www.linkedin.com/in/larissa-vilela-sobral/)
 
-### [Michele Martins](https://www.linkedin.com/in/michele-valerio-martins/)
+* ### [Michele Martins](https://www.linkedin.com/in/michele-valerio-martins/)
 
-### [Patrícia Barnabé](https://www.linkedin.com/in/patriciabarnabe)
+* ### [Patrícia Barnabé](https://www.linkedin.com/in/patriciabarnabe)
 
-### [Thais Fernandes](https://www.linkedin.com/in/thaisfernandesjulio/)
+* ### [Thais Fernandes](https://www.linkedin.com/in/thaisfernandesjulio/)
